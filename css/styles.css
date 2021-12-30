@@ -1,4 +1,4 @@
-/*
+/* 
 цвет основного текста: #757575;
 вторичный цвет текста: #212121;
 акцент: #2196F3;
@@ -28,8 +28,20 @@ a {
   text-decoration: none;
 }
 
+/* Container */
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
@@ -38,20 +50,56 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
 }
 .logo-title {
   color: var(--accent-color);
 }
+
+/* Header */
+
+.header .container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec
+}
+
+
 /* Site nav */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  /* margin-right: 331px; */
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+/* .site-nav.list {
+  
+} */
+
 .site-nav .link {
   color: var(--title-text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
+  padding-right: 50px;
+  
 }
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+/* Auth-nav */
+
+.auth-nav.list {
+  display: flex;
+  align-items: center;
 }
 
 .auth-nav .link {
@@ -59,6 +107,10 @@ a {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
+  padding-left: 50px;
+}
+.auth-nav .item:last-child{
+  margin-right: 0;
 }
 
 .site-nav .link:hover,
@@ -69,7 +121,10 @@ a {
 }
 /* Hero */
 
+
+
 .hero.section {
+  height: 600px;
   background-color: var(--first-bg-color);
   text-align: center;
 }
@@ -82,6 +137,8 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 200px;
+  margin-top: 0;
 }
 
 /* Section */
@@ -92,9 +149,22 @@ a {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* Features */
+
+
+.features.list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+}
+.features .item {
+  margin-right: 30px;
+}
 
 .features .title {
   color: var(--title-text-color);
@@ -102,24 +172,66 @@ a {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .features p {
   font-size: 14px;
   line-height: 1.71;
 }
+/* What we do */
+
+.whatwedo.list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.whatwedo .item {
+  margin-right: 30px;
+}
 
 /* Team */
+.team.section {
+  background-color: var(--secondary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team.list {
+  display: flex;
+  
+}
+
+.team .item {
+  background-color: var(--primary-white-color);
+  margin-right: 30px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 
+              0px 1px 1px rgb(0 0 0 / 14%), 
+              0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team.item:last-child {
+  margin-right: 0;
+}
+
+.team .card.title {
+  margin: 30px 0;
+}
 
 .team .title {
   color: var(--title-text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1875;
+  margin-bottom: 10px;
 }
 
 .team p {
   font-size: 16px;
   line-height: 1.1875;
+  color: var(--primary-text-color);
+  font-weight: 400;
 }
 
 /* Button */
@@ -130,12 +242,13 @@ a {
 }
 
 .button.primary {
+  width: 200px;
+  height: 50px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
+  
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -146,7 +259,6 @@ a {
 
 .button.secondary {
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -165,12 +277,15 @@ a {
 .footer {
   background-color: var(--first-bg-color);
   color: var(--primary-white-color);
+  height: 252px;
+  padding-top: 60px;
 }
 .footer address {
   font-size: 14px;
   line-height: 1.71;
   font-weight: 400;
   font-style: normal;
+  margin-top: 20px;
 }
 
 .footer .logo {
@@ -183,6 +298,12 @@ a {
 
 .footer .primary.link {
   color: var(--primary-white-color);
+  
+}
+
+.secondary.link{
+ 
+  
 }
 
 .footer .link:hover,
@@ -193,6 +314,29 @@ a {
 /* Portfolio */
 
 .filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.cards.list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100/3-30px);
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+}
+
+.cards .card.title {
+  padding: 20px 24px;
+}
+
+.cards .item {
+  margin-top: 30px;
+  margin-left: 30px;
+  outline: 1px solid #EEEEEE;
+  
 }
 
 .card {
@@ -202,7 +346,9 @@ a {
   line-height: 2;
 }
 
-.cards p {
+.cards.list p {
   font-size: 16px;
   line-height: 1.875;
-}
+  color: var(--primary-text-color);
+  font-weight: 400;
+} */
