@@ -37,6 +37,10 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} */
 
 .list {
   list-style: none;
@@ -305,10 +309,6 @@ letter-spacing: 0.03em;
   
 }
 
-.secondary.link{
- 
-  
-}
 
 .footer .link:hover,
 .footer .link:focus {
@@ -316,6 +316,7 @@ letter-spacing: 0.03em;
 }
 
 /* Portfolio */
+
 
 .filters {
   display: flex;
@@ -336,7 +337,7 @@ letter-spacing: 0.03em;
   flex-wrap: wrap;
   margin-left: calc(-1 * 30px);
   margin-top: calc(-1 * 30px);
- 
+  padding-bottom: 94px;
 }
 
 .cards .card.title {
