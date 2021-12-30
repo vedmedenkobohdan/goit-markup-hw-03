@@ -100,6 +100,7 @@ a {
 .auth-nav.list {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .auth-nav .link {
@@ -237,6 +238,7 @@ a {
 /* Button */
 .button {
   color: var(--title-text-color);
+  border: 0;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -259,11 +261,13 @@ a {
 
 .button.secondary {
   font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+
   background-color: var(--secondary-bg-color);
   border-color: transparent;
 }
@@ -316,26 +320,35 @@ a {
 .filters {
   display: flex;
   justify-content: center;
+  padding-top: 94px;
   margin-bottom: 50px;
+}
+.filters .item {
+  padding-right: 8px;
 }
 
 .cards.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100/3-30px);
-  margin: 0;
-  padding: 0;
-  margin-top: -30px;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+ 
 }
 
 .cards .card.title {
   padding: 20px 24px;
+  border: 1px solid #EEEEEE;
+  border-top: 0;
 }
 
 .cards .item {
-  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
-  outline: 1px solid #EEEEEE;
+  margin-top: 30px;
   
 }
 
@@ -344,6 +357,7 @@ a {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
+
 }
 
 .cards.list p {
@@ -351,4 +365,4 @@ a {
   line-height: 1.875;
   color: var(--primary-text-color);
   font-weight: 400;
-} */
+} 
