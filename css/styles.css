@@ -160,12 +160,15 @@ a {
 .features.list {
   display: flex;
   width: 1170px;
-  padding: 0 0;
+  /* padding: 0 0; */
 }
-.features .item {
-  width: 270px;
+.features > .item {
+  max-width: calc((100%-120px) / 4);
   height: 101px;
   margin-right: 30px;
+}
+.features > .item:last-child {
+  margin-right: -30px;
 }
 
 .features .title {
@@ -174,13 +177,15 @@ a {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 .features p {
+  width: 270px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
+  margin: 0;
   letter-spacing: 0.03em;
 }
 
@@ -281,7 +286,6 @@ a {
 .footer {
   background-color: var(--first-bg-color);
   color: var(--primary-white-color);
-  height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -299,9 +303,6 @@ a {
   margin-right: 0;
 }
 
-.footer address.link {
-}
-
 .footer .primary.link {
   color: var(--primary-white-color);
 }
@@ -313,7 +314,7 @@ a {
 
 /* Portfolio */
 
-.projects {
+.projects.container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -324,7 +325,7 @@ a {
   margin-bottom: 50px;
 }
 .filters .item {
-  padding-right: 8px;
+  padding: 6px 22px;
 }
 
 .cards.list {
