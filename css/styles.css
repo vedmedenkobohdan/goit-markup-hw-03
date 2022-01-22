@@ -307,6 +307,11 @@ a {
   color: var(--primary-white-color);
 }
 
+.footer .link,
+.footer .secondary.link {
+  color: var(--footer-address-color);
+}
+
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
