@@ -376,12 +376,13 @@ footer .logo {
 .cards.list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.cards.list .item {
+/* .cards.list .item {
   margin-right: 30px;
   margin-bottom: 30px;
-}
+} */
 
 .cards.list .item:nth-child(3n) {
   margin-right: 0;
