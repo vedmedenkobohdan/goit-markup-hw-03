@@ -302,6 +302,7 @@ header .logo {
   border-color: transparent;
   padding: 6px 22px;
 }
+
 .button.secondary:hover,
 .button.secondary:focus,
 .button.secondary:active {
