@@ -52,6 +52,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .section {
   padding-top: 94px;
 }
@@ -142,6 +143,7 @@ header .logo {
 .auth-nav .link:focus {
   color: var(--accent-color);
 }
+
 /* Hero */
 
 .hero.section {
@@ -182,7 +184,6 @@ header .logo {
 .features.list {
   display: flex;
   width: 1170px;
-  /* padding: 0 0; */
 }
 .features > .item {
   max-width: calc((100%-120px) / 4);
@@ -210,6 +211,8 @@ header .logo {
   margin: 0;
   letter-spacing: 0.03em;
 }
+
+/* What we do */
 
 .whatwedo.list {
   display: flex;
@@ -304,9 +307,6 @@ header .logo {
 .button.secondary:active {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
-
-.footer .container {
 }
 
 address .secondary.link {
